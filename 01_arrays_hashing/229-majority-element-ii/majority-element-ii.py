@@ -34,11 +34,9 @@ class Solution:
             if i==majority2:
                 counter2+=1
             
-        if counter1>len(nums)//3 and counter2>len(nums)//3:
-            return [majority1,majority2]
-        elif counter1>len(nums)//3:
-            return [majority1]
-        elif counter2>len(nums)//3:
-            return [majority2]
-        else:
-            return []
+        result=[]
+        if counter1>len(nums)//3:
+            result.append(majority1)
+        if counter2>len(nums)//3:
+            result.append(majority2)
+        return result
