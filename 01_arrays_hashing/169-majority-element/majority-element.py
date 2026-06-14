@@ -11,14 +11,14 @@ class Solution:
                 count+=1
             else:
                 count-=1
-
-        # step 2: verification
-        counter=0
-        for i in nums:
-            if i==majority:
-                counter+=1
-        if counter > len(nums)//2:
-            return majority
-        else:
-            return None   
+        return majority
+        # # step 2: verification is needeed only for the majority 2
+        # counter=0
+        # for i in nums:
+        #     if i==majority:
+        #         counter+=1
+        # if counter > len(nums)//2:
+        #     return majority
+        # else:
+        #     return None   
                 
