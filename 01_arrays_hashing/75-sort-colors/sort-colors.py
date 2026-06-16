@@ -14,5 +14,7 @@ class Solution:
             elif nums[i]==2:
                 nums[i],nums[r]=nums[r],nums[i]
                 r-=1
+                # i+=1 you can't just increment i while swapping with right pointer
+                
             else:
                 i+=1
