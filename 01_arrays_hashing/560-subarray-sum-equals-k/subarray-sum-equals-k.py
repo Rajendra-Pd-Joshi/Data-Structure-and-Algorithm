@@ -8,6 +8,7 @@ class Solution:
             curSum += n
             diff = curSum - k
 
-            res += prefixSums.get(diff,0)
+            if diff in prefixSums:
+                res+=prefixSums[diff]
             prefixSums[curSum] +=1
         return res
