@@ -16,9 +16,9 @@ class Solution:
         while i>=0:
             right_max[i]=max(height[i],right_max[i+1])
             i-=1
-        print(height)
-        print(left_max)
-        print(right_max)
+        # print(height)
+        # print(left_max)
+        # print(right_max)
 
         for i in range(n):
             temp = min(left_max[i],right_max[i])-height[i]
