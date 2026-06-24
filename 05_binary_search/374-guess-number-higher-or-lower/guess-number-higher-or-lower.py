@@ -11,7 +11,7 @@ class Solution:
         while True:
             m = (l+r)//2
             res = guess(m)
-            print(res)
+            # print(res)
             if res > 0:
                 l = m+1
             elif res < 0:
