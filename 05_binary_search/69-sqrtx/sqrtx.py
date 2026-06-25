@@ -3,7 +3,7 @@ class Solution:
         l,r = 1,x
         while l <= r :
             m = (l+r)//2
-            print(m)
+            # print(m)
             if m*m > x:
                 r = m-1
             elif m*m < x:
