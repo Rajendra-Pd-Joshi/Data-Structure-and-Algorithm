@@ -14,3 +14,5 @@ class Solution:
                 n+=2
         
         return result
+        # time complexity is O(N+N)
+        # space complexity is O(N)
