@@ -17,3 +17,6 @@ class Solution:
                 largest = max(largest,count)
         
         return largest
+
+    # time complexity is O(N+N+N)
+    # space complexity is O(N)
