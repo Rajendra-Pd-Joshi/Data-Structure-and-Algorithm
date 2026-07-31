@@ -28,3 +28,6 @@ class Solution:
             for j in range(0,c):
                 if matrix[i][j] == float('inf'):
                     matrix[i][j] =0
+
+
+# time complexity is fill infity is O(N+M) and called inside so O(N*M*(N+M))+O(N*M) is the complexity and space is O(1)
