@@ -3,9 +3,6 @@ class Solution:
         if len(s) != len(goal):
             return False
         
-        for i in range(len(s)):
-            if s == goal:
-                return True
-            s = s[-1]+s[:-1]
-        
+        if goal in s*2:
+            return True
         return False
