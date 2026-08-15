@@ -5,7 +5,7 @@ class Solution:
         for i in s:
             mapping[i] = mapping.get(i,0)+1
 
-        result = sorted(mapping.items(),key=lambda x:-x[1])
+        result = sorted(mapping.items(),key=lambda x:(-x[1],x[0]))
         ans =''
         for key,value in result:
             ans = ans + key*value
