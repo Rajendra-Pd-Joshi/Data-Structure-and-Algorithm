@@ -1,16 +1,13 @@
-from collections import defaultdict
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        mapping = defaultdict(int)
+        mapping ={}
 
         for i in s:
-            mapping[i] += 1
-        
+            mapping[i] = mapping.get(i,0)+1
         for i in t:
-            mapping[i] -= 1
-
-        for key,value in mapping.items():
-            if value != 0:
-                return False
+            mapping[i] = mapping.get(i,0)-1
         
+        for i in mapping:
+            if mapping[i]!=0:
+                return False
         return True
